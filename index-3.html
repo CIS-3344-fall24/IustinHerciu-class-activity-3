@@ -106,15 +106,15 @@
         let result = {};
 
         // loop through each word in the array
-        for (let word of words) {
-          // sort the letters in the word and use the sorted version as the key
-          let sort = word.split("").sort().join("");
+        for (let anag of words) {
+          // sort§ the letters in the word and use the sorted version as the key
+          let sort = anag.split("").sort().join("");
 
           // if statement
           if (result[sort]) {
-            result[sort].push(word);
+            result[sort].push(anag);
           } else {
-            result[sort] = [word];
+            result[sort] = [anag];
           }
         }
 
